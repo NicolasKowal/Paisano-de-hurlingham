@@ -409,7 +409,24 @@ nav ul li:hover{
     letter-spacing: 5px;
 }
 
+.imagen_info{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagen_info div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.imagen_info img{
+    padding-top: 20px;
+    width: 30%;
+}
 
 /*!==========================================================================================================*/
 @media (max-width: 1300px){
@@ -425,7 +442,7 @@ nav ul li:hover{
     .grid-container2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 150px 70vh auto;
+        grid-template-rows: 150px auto auto;
         grid-template-areas: 
         "header header"        "main aside"        "footer footer"        ;
         margin: 0 auto;
@@ -570,7 +587,7 @@ nav ul li:hover{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px 150vh 502px;
+        grid-template-rows: 100px auto 502px;
         grid-template-areas: 
         "header header"        "main main"        "footer footer"        ;
         margin: 0 auto;
@@ -680,6 +697,10 @@ nav ul li:hover{
     }
     .principal li a{
         font-size: 30px;
+    }
+    .imagen_info img{
+        padding-top: 20px;
+        width: 25%;
     }
 }
 
@@ -865,7 +886,7 @@ nav ul li:hover{
     .grid-container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px 1000px 502px;
+        grid-template-rows: 75px auto 502px;
         grid-template-areas: 
         "header" "main" "footer" ;
         width: 100%;
@@ -874,7 +895,7 @@ nav ul li:hover{
     .grid-container2{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px 50vh 50vh auto;
+        grid-template-rows: 75px auto auto;
         grid-template-areas: 
         "header"        "main" "aside"       "footer"        ;
         width: 100%;
@@ -998,7 +1019,10 @@ nav ul li:hover{
     .catalogo-item{
         margin: 0 auto;
     }
-
+    .imagen_info img{
+        padding-top: 20px;
+        width: 50%;
+    }
 }
 
 
