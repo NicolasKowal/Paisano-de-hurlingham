@@ -98,13 +98,12 @@
 .grid-container2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 71.1vh auto; /*!!!!!D*/
+    grid-template-rows: 200px 1160px auto; /*!!!!!D*/
     grid-template-areas: 
     "header header header"
     "main aside aside"
     "footer footer footer"
     ;
-
     margin: 0 auto;
     background-color: white;
 }
@@ -200,7 +199,7 @@ nav ul li:hover{
 
 .navegador ul li a{
     text-decoration: none;
-    font-size: 100%;
+    font-size: 150%;
     color: black;
     text-transform: uppercase;
     align-items: center;
@@ -421,6 +420,9 @@ nav ul li:hover{
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 28px;
+    padding: 20px;
+    text-align: justify;
 }
 
 .imagen_info img{
@@ -433,18 +435,22 @@ nav ul li:hover{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 150px auto 502px;
+        grid-template-rows: 200px 1600px 502px;
         grid-template-areas: 
-        "header header"        "main main"        "footer footer"        ;
+        "header header"
+        "main main"
+        "footer footer";
         margin: 0 auto;
         background-color: white;
     }
     .grid-container2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 150px auto auto;
+        grid-template-rows: 200px 1260px auto;
         grid-template-areas: 
-        "header header"        "main aside"        "footer footer"        ;
+        "header header"
+        "main aside"
+        "footer footer";
         margin: 0 auto;
         background-color: white;
     }
@@ -470,7 +476,7 @@ nav ul li:hover{
     .encabezado div img{
         align-items: center;
         text-align: center;
-        width: 150px;
+        width: 250px;
     }
     .navegador ul li{
         height: 10%;
@@ -485,7 +491,7 @@ nav ul li:hover{
     }
     .navegador ul li a{
         text-decoration: none;
-        font-size: 80%;
+        font-size: 130%;
         color: black;
         text-transform: uppercase;
     }
@@ -578,6 +584,14 @@ nav ul li:hover{
     .principal li a{
         font-size: 30px;
     }
+    .imagen_info div{
+        font-size: 20px;
+    }
+    .catalogo div{
+        width: 100%;
+        height: 110%;
+        position: relative;
+    }
 }
 
 
@@ -587,18 +601,22 @@ nav ul li:hover{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px auto 502px;
+        grid-template-rows: 150px 1500px 502px;
         grid-template-areas: 
-        "header header"        "main main"        "footer footer"        ;
+        "header header"
+        "main main"
+        "footer footer";
         margin: 0 auto;
         background-color: white;
     }
     .grid-container2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 150px 71.1vh auto;
+        grid-template-rows: 150px 1260px auto;
         grid-template-areas: 
-        "header header"        "main aside"        "footer footer"        ;
+        "header header"
+        "main aside"
+        "footer footer";
         margin: 0 auto;
         background-color: white;
     }
@@ -629,7 +647,7 @@ nav ul li:hover{
     .encabezado div img{
         align-items: center;
         text-align: center;
-        width: 125px;
+        width: 175px;
     }
     .navegador{
         grid-area: nav;
@@ -639,7 +657,7 @@ nav ul li:hover{
     .navegador ul{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
         height: 100%;
         width: 100%;
@@ -658,7 +676,7 @@ nav ul li:hover{
     }
     .navegador ul li a{
         text-decoration: none;
-        font-size: 70%;
+        font-size: 110%;
         color: black;
         text-transform: uppercase;
     }
@@ -711,18 +729,23 @@ nav ul li:hover{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px 300vh 502px;
+        grid-template-rows: 150px 2500px 502px;
         grid-template-areas: 
-        "header header"        "main main"        "footer footer"       ;
+        "header header"
+        "main main"
+        "footer footer";
         width: 100%;
         background-color: white;
     }
     .grid-container2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px 50vh 50vh auto;
+        grid-template-rows: 150px 50vh 50vh auto;
         grid-template-areas: 
-        "header header"        "main main"   "aside aside"     "footer footer"        ;
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer";
         width: 100%;
         background-color: white;
     }
@@ -747,7 +770,7 @@ nav ul li:hover{
     .navegador ul{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around  ;
         flex-direction: row;
         height: 100%;
         width: 100%;
@@ -766,7 +789,7 @@ nav ul li:hover{
     }
     .navegador ul li a{
         text-decoration: none;
-        font-size: 53%;
+        font-size: 110%;
         color: black;
         text-transform: uppercase;
     }
@@ -877,27 +900,27 @@ nav ul li:hover{
     .catalogo-item{
         margin: 0 auto;
     }
+    .imagen_info img{
+        width: 60%;
+    }
+    .imagen_info div{
+        font-size: 24px;
+    }
 }
 
 
 
 /*!==========================================================================================================*/
 @media (max-width: 500px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 75px auto 502px;
-        grid-template-areas: 
-        "header" "main" "footer" ;
-        width: 100%;
-        background-color: white;
-    }
     .grid-container2{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px auto auto;
+        grid-template-rows: 140px 650px 650px auto;
         grid-template-areas: 
-        "header"        "main" "aside"       "footer"        ;
+        "header"
+        "main"
+        "aside"
+        "footer";
         width: 100%;
         background-color: white;
     }
@@ -912,12 +935,12 @@ nav ul li:hover{
     .encabezado img{
         align-items: center;
         text-align: center;
-        width: 90px;
+        width: 100px;
     }
     .encabezado div img{
         align-items: center;
         text-align: center;
-        width: 75px;
+        width: 100px;
     }
     .navegador{
         grid-area: nav;
@@ -927,7 +950,7 @@ nav ul li:hover{
     .navegador ul{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
         height: 100%;
         width: 100%;
@@ -946,7 +969,7 @@ nav ul li:hover{
     }
     .navegador ul li a{
         text-decoration: none;
-        font-size: 40%;
+        font-size: 80%;
         color: black;
         text-transform: uppercase;
     }
@@ -992,26 +1015,21 @@ nav ul li:hover{
         font-size: 6px;
         text-align: justify;
     }
+    .pie img{
+        width: 30%;
+        padding: 3px;
+    }
     .pie h2{
-        font-size: 15px;
+        font-size: 20px;
     }
     .pie h3{
+        font-size: 20px;
+    }
+    .pie p{
         font-size: 10px;
     }
-    .catalogo{
-        width: 100%;
-        padding-top: 30px;
-        padding-bottom: 110px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 100px;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
     .catalogo div{
-        width: 50%;
-        height: 100%;
+        width: 100%;
         position: relative;
         display: flex;
         justify-content: center;
@@ -1020,8 +1038,15 @@ nav ul li:hover{
         margin: 0 auto;
     }
     .imagen_info img{
-        padding-top: 20px;
         width: 50%;
+        padding: 2px;
+    }
+    .img-footer img{
+        width: 100px;
+        
+    }
+    .imagen_info div{
+        font-size: 12px;
     }
 }
 
