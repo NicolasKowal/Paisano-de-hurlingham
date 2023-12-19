@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .padding {
@@ -68,17 +69,16 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 			aspect-ratio: 1 / 1;
 		}
 		h2 {
-            @include flex(flex, center, center, center);
+			@include flex(flex, center, center, center);
 			visibility: hidden;
 			height: 20%;
 			width: 100%;
 			position: absolute;
 			bottom: 0;
 			text-transform: capitalize;
-			font-size: larger;
+			font-size: nth($font-size, 1);
 			color: nth($colores, 3);
 			background-color: rgba(0, 0, 0, 0.651);
-
 		}
 		&:hover {
 			h2 {
@@ -110,12 +110,12 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 
 .grid-container2 {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 200px 556px auto;
 	grid-template-areas:
-		"header header header"
-		"main aside aside"
-		"footer footer footer";
+		"header header header header"
+		"main main aside aside"
+		"footer footer footer footer";
 	margin: 0 auto;
 	background-color: nth($colores, 3);
 }
@@ -129,19 +129,19 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 		width: 100%;
 	}
 }
-
+/*
 .centrar {
-    @include flex(flex, center, center, center);
-}
+	@include flex(flex, center, center, center);
+}*/
 
 .linkeos {
 	ul {
 		li {
-			font-size: larger;
+			font-size: nth($font-size, 1);
 			list-style: none;
 			height: 100%;
 			width: 100%;
-			font-size: 48px;
+			font-size: nth($font-size, 3);
 			margin-inline: 50px;
 			a {
 				color: black;
