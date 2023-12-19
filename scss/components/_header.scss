@@ -1,0 +1,53 @@
+/* -  -  -  -  -  -  -  -  HEADER  -  -  -  -  -  -  -  - */
+
+.encabezado {
+	grid-area: header;
+	display: block;
+	background-color: nth($colores, 2);
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	div {
+		height: 50%;
+		width: 100%;
+		@include flex(flex, center, center, center);
+	}
+	img {
+		align-items: center;
+		text-align: center;
+		width: 250px;
+		&:hover {
+			font-size: nth($font-size, 1);
+		}
+	}
+}
+
+/* -  -  -  -  -  -  -  -  NAV  -  -  -  -  -  -  -  - */
+
+.navegador {
+	grid-area: nav;
+	height: 100%;
+	width: 100%;
+	ul {
+		@include flex(flex, center, space-around, center);
+		flex-direction: row;
+		height: 50%;
+		width: 100%;
+		list-style: none;
+		li {
+			height: 75%;
+			width: 75%;
+			@include flex(flex, center, center, center);
+			a {
+				text-decoration: none;
+				font-size: nth($font-size, 2);
+				color: black;
+				text-transform: uppercase;
+				align-items: center;
+				&:hover {
+					font-size: nth($font-size, 1);
+				}
+			}
+		}
+	}
+}

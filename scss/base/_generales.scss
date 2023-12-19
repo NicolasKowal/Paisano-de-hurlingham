@@ -1,0 +1,151 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.padding {
+	padding: 10px;
+}
+
+/* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
+
+$colores: #bddeb9, #5bc05d, whitesmoke, black, #c0651b, #c27231, #2e942c,
+	#a4a4a4, #e62e1b;
+
+$font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
+	15px, 120%, 36px, 110%, 24px, 11px, 12px, 80%, 25%;
+
+/* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
+
+@mixin flex($flex, $items, $content, $align) {
+	display: $flex;
+	align-items: $items;
+	justify-content: $content;
+	align-items: $align;
+}
+
+/* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
+.formul {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.carusel {
+	margin: 0;
+	height: 400px;
+	width: 100%;
+	img {
+		height: 400px;
+		width: 100px;
+		aspect-ratio: 2 / 1;
+		object-position: center;
+	}
+}
+
+/* -  -  -  -  -  -  -  -  CATALOGO  -  -  -  -  -  -  -  - */
+
+.catalogo {
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 110px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 300px;
+	align-items: center;
+	gap: 10%;
+	div {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 1 / 1;
+		}
+		h2 {
+            @include flex(flex, center, center, center);
+			visibility: hidden;
+			height: 20%;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			text-transform: capitalize;
+			font-size: larger;
+			color: nth($colores, 3);
+			background-color: rgba(0, 0, 0, 0.651);
+
+		}
+		&:hover {
+			h2 {
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.catalogo-item {
+	-webkit-box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
+	box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
+}
+
+/* -  -  -  -  -  -  -  -  GRID  -  -  -  -  -  -  -  - */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 200px auto 550px;
+	grid-template-areas:
+		"header header header"
+		"main main main"
+		"footer footer footer";
+	margin: 0 auto;
+	background-color: nth($colores, 3);
+}
+
+.grid-container2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 200px 556px auto;
+	grid-template-areas:
+		"header header header"
+		"main aside aside"
+		"footer footer footer";
+	margin: 0 auto;
+	background-color: nth($colores, 3);
+}
+
+/* -  -  -  -  -  -  -  -  ASIDE  -  -  -  -  -  -  -  - */
+
+.aside {
+	grid-area: aside;
+	iframe {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.centrar {
+    @include flex(flex, center, center, center);
+}
+
+.linkeos {
+	ul {
+		li {
+			font-size: larger;
+			list-style: none;
+			height: 100%;
+			width: 100%;
+			font-size: 48px;
+			margin-inline: 50px;
+			a {
+				color: black;
+			}
+		}
+	}
+}
