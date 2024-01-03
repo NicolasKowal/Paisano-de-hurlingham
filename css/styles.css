@@ -236,7 +236,10 @@
     color: #e62e1b;
     font-size: 28px;
     font-family: monospace;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    transition: transform 0.3s ease; }
+  .publicidad:hover {
+    transform: rotate(180deg); }
 
 /* -  -  -  -  -  -  -  -  MAIN INDEX  -  -  -  -  -  -  -  - */
 .principal {
@@ -402,7 +405,10 @@
   .principal li a {
     font-size: 30px; }
   .imagen_info div {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .formul {
+    padding: 30px;
+    height: 500px; } }
 
 @media (max-width: 1000px) {
   .grid-container {
@@ -435,7 +441,9 @@
   .item-locales h3 {
     font-size: 18px; }
   .img-footer {
-    height: 90%; }
+    height: 20%; }
+    .img-footer img {
+      height: 100%; }
   .publicidad {
     height: 10%; } }
 
@@ -469,11 +477,8 @@
     font-size: 20px; }
   .pie h3 {
     font-size: 20px; }
-  .img-footer img {
-    height: 100%;
-    width: 200px; }
   .item-locales p {
-    font-size: 18px; }
+    font-size: 15px; }
   .item-locales img {
     width: 10%; }
   .redes img {
@@ -556,8 +561,10 @@
     padding: 2px; }
   .imagen_info div {
     font-size: 12px; }
-  .img-footer img {
-    width: 150px; }
+  .img-footer {
+    height: 10%; }
+    .img-footer img {
+      height: 100%; }
   .tituloh1 {
     font-size: 20px; }
   .item-locales h2 {

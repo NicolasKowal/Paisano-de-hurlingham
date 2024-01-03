@@ -93,6 +93,10 @@
 			font-size: nth($font-size, 9);
 		}
 	}
+	.formul{
+		padding: 30px;
+		height: 500px;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -163,7 +167,10 @@
 		}
 	}
 	.img-footer {
-		height: 90%;
+		height: 20%;
+		img {
+			height: 100%;
+		}
 	}
 	.publicidad {
 		height: 10%;
@@ -227,15 +234,10 @@
 			font-size: nth($font-size, 7);
 		}
 	}
-	.img-footer {
-		img {
-			height: 100%;
-			width: 200px;
-		}
-	}
+
 	.item-locales {
 		p {
-			font-size: nth($font-size, 10);
+			font-size: nth($font-size, 12);
 		}
 		img {
 			width: 10%;
@@ -388,8 +390,9 @@
 		}
 	}
 	.img-footer {
+		height: 10%;
 		img {
-			width: 150px;
+			height: 100%;
 		}
 	}
 	.tituloh1 {

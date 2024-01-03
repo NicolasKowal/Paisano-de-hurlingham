@@ -81,5 +81,9 @@
 		font-size: nth($font-size, 6);
 		font-family: monospace;
 		letter-spacing: 5px;
+		transition: transform 0.3s ease;
+	}
+	&:hover{
+		transform: rotate(180deg);
 	}
 }
