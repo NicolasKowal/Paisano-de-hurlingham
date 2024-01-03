@@ -39,15 +39,43 @@
 					<img src="../img/logo.png" alt="paisano" />
 				</a>
 			</div>
-			<nav class="navegador">
-				<ul>
-					<li><a href="../pages/catalogo.html">productos</a></li>
-					<li><a href="../pages/info.html">info </a></li>
-					<li><a href="../pages/trabaja-con-nosotros.html">Empleo</a></li>
-					<li><a href="../pages/locales.html">locales</a></li>
-				</ul>
-			</nav>
 		</header>
+		<nav class="navbar navbar-expand-lg navbar-light navegador">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html"
+							>Inicio <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pages/catalogo.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pages/info.html">historia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pages/trabaja-con-nosotros.html"
+							>Empleo</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pages/locales.html">Locales</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<main class="principal centrar linkeos padding">
 			<h1 class="tituloh1">LOCALES</h1>
 			<ul id="enlaces enlaces-1">
@@ -88,7 +116,6 @@
 				</li>
 			</ul>
 		</main>
-
 		<script>
 			function cambiarUbicacion(latitud, longitud) {
 				var mapa = document.getElementById("mapa");
@@ -96,7 +123,6 @@
 				mapa.src = nuevaUbicacion;
 			}
 		</script>
-
 		<aside class="aside">
 			<iframe
 				id="mapa"
@@ -109,7 +135,6 @@
 			<div class="img-footer">
 				<img src="../img/logo2.png" alt="paisano" />
 			</div>
-
 			<div class="publicidad">
 				<a href="#">MALATESTA</a>
 			</div>

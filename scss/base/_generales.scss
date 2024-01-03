@@ -11,7 +11,7 @@
 
 /* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
 
-$colores: #bddeb9, #5bc05d, whitesmoke, black, #c0651b, #c27231, #2e942c,
+$colores: #fff9e1, #69503c, whitesmoke, black, #5f4633, #69503c, #907761,
 	#a4a4a4, #e62e1b;
 
 $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
@@ -28,10 +28,19 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 
 /* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
 .formul {
-	width: 50%;
-	margin: 0 auto;
+	@include flex(flex, center, center, center);
+	height: 400px;
+	width: 100%;
+	margin: 0 auto;/*
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 50px;*/
+
+}
+
+.color{
+	background-color: nth($colores, 4);
+	height: 40px;
+	width: 70px;
 }
 
 .carusel {
@@ -99,9 +108,10 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 200px auto 550px;
+	grid-template-rows: 100px 75px auto 550px;
 	grid-template-areas:
 		"header header header"
+		"nav nav nav"
 		"main main main"
 		"footer footer footer";
 	margin: 0 auto;
@@ -111,9 +121,10 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 .grid-container2 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 200px 556px auto;
+	grid-template-rows: 100px 75px 569px auto;
 	grid-template-areas:
 		"header header header header"
+		"nav nav nav nav"
 		"main main aside aside"
 		"footer footer footer footer";
 	margin: 0 auto;

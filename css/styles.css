@@ -11,10 +11,21 @@
 /* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
 /* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
 .formul {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  /*
+	margin-top: 50px;
+	margin-bottom: 50px;*/ }
+
+.color {
+  background-color: black;
+  height: 40px;
+  width: 70px; }
 
 .carusel {
   margin: 0;
@@ -72,16 +83,16 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px auto 550px;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: 100px 75px auto 550px;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
   margin: 0 auto;
   background-color: whitesmoke; }
 
 .grid-container2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 556px auto;
-  grid-template-areas: "header header header header" "main main aside aside" "footer footer footer footer";
+  grid-template-rows: 100px 75px 569px auto;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main aside aside" "footer footer footer footer";
   margin: 0 auto;
   background-color: whitesmoke; }
 
@@ -106,12 +117,12 @@
 .encabezado {
   grid-area: header;
   display: block;
-  background-color: #5bc05d;
+  background-color: #69503c;
   width: 100%;
   height: 100%;
   padding: 10px; }
   .encabezado div {
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -128,7 +139,8 @@
 .navegador {
   grid-area: nav;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  background-color: #69503c; }
   .navegador ul {
     display: flex;
     align-items: center;
@@ -157,7 +169,7 @@
 /* -  -  -  -  -  -  -  -  FOOTER  -  -  -  -  -  -  -  - */
 .pie {
   grid-area: footer;
-  background-color: #2e942c; }
+  background-color: #907761; }
   .pie section h2 {
     display: flex;
     align-items: center;
@@ -229,11 +241,11 @@
 /* -  -  -  -  -  -  -  -  MAIN INDEX  -  -  -  -  -  -  -  - */
 .principal {
   grid-area: main;
-  background-color: #bddeb9;
+  background-color: #fff9e1;
   align-content: center; }
 
 .tituloh1 {
-  color: whitesmoke;
+  color: black;
   text-align: center;
   padding-left: 20px;
   padding-top: 20px;
@@ -267,17 +279,17 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   height: 200px;
   margin-top: 60px;
   margin-bottom: 40px;
-  background-color: #c0651b;
+  background-color: #5f4633;
   font-size: 14px;
   color: whitesmoke; }
   .banner:hover {
-    width: 83%;
+    width: 89%;
     height: 205px;
-    background-color: #c27231; }
+    background-color: #69503c; }
   .banner h2 {
     width: 50%;
     padding: 5%; }
@@ -347,9 +359,9 @@
 
 @media (max-width: 1300px) {
   .grid-container {
-    grid-template-rows: 200px auto 502px; }
+    grid-template-rows: 100px 75px auto 502px; }
   .grid-container2 {
-    grid-template-rows: 200px 65.6vh auto; }
+    grid-template-rows: 100px 75px 65.6vh auto; }
   .navegador ul li a {
     font-size: 140%; }
   .texto-banner h2 {
@@ -394,21 +406,19 @@
 
 @media (max-width: 1000px) {
   .grid-container {
-    grid-template-rows: 150px auto 502px; }
+    grid-template-rows: 100px 75px auto 502px; }
   .grid-container2 {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 655px auto;
-    grid-template-areas: "header header" "main aside" "footer footer"; }
+    grid-template-rows: 100px 75px 655px auto;
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; }
   .encabezado div img {
     width: 200px; }
   .navegador ul li a {
-    font-size: 120%; }
+    font-size: 110%; }
   .foto-inicial {
     height: 300px; }
     .foto-inicial h1 {
       font-size: 36px; }
-  .banner {
-    width: 80%; }
   .texto-banner h2 {
     font-size: 24px; }
   .texto-banner p {
@@ -424,35 +434,36 @@
       font-size: 24px; }
   .item-locales h3 {
     font-size: 18px; }
+  .img-footer {
+    height: 90%; }
   .publicidad {
-    height: 20%; } }
+    height: 10%; } }
 
 @media (max-width: 720px) {
   .grid-container {
-    grid-template-rows: 150px auto 502px; }
+    grid-template-rows: 75px auto auto 502px; }
   .grid-container2 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px 50vh 50vh auto;
-    grid-template-areas: "header header" "main main" "aside aside" "footer footer"; }
-  .encabezado div {
-    height: 50%; }
-    .encabezado div img {
-      width: 150px; }
+    grid-template-rows: 75px auto 55vh 50vh auto;
+    grid-template-areas: "header header" "nav nav" "main main" "aside aside" "footer footer"; }
+  .encabezado div img {
+    width: 150px; }
   .navegador {
-    height: 50%;
     align-items: center; }
     .navegador ul {
       width: 100%;
       height: 100%; }
       .navegador ul li a {
-        font-size: 110%; }
+        font-size: 18px; }
   .foto-inicial {
     height: 250px; }
     .foto-inicial h1 {
       font-size: 24px; }
   .texto-banner h2 {
+    width: 40%;
     font-size: 11px; }
   .texto-banner p {
+    width: 80%;
     font-size: 12px; }
   .pie h2 {
     font-size: 20px; }
@@ -496,11 +507,11 @@
 
 @media (max-width: 500px) {
   .grid-container {
-    grid-template-rows: 75px auto 500px; }
+    grid-template-rows: 0 auto auto 500px; }
   .grid-container2 {
-    grid-template-rows: 75px 450px 500px auto;
+    grid-template-rows: 0 auto 450px 500px auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "aside" "footer"; }
+    grid-template-areas: "header" "nav" "main" "aside" "footer"; }
   .encabezado div {
     visibility: collapse;
     height: 0; }
@@ -518,10 +529,13 @@
     height: 200px;
     width: 80%; }
   .texto-banner h2 {
+    visibility: collapse;
+    width: 0;
     text-transform: uppercase;
     text-align: center;
     font-size: 11px; }
   .texto-banner p {
+    width: 100%;
     font-size: 11px; }
   .pie img {
     width: 25%;

@@ -8,7 +8,7 @@
 	height: 100%;
 	padding: 10px;
 	div {
-		height: 50%;
+		height: 100%;
 		width: 100%;
 		@include flex(flex, center, center, center);
 	}
@@ -28,6 +28,7 @@
 	grid-area: nav;
 	height: 100%;
 	width: 100%;
+	background-color: nth($colores, 2);
 	ul {
 		@include flex(flex, center, space-around, center);
 		flex-direction: row;
@@ -41,7 +42,7 @@
 			a {
 				text-decoration: none;
 				font-size: nth($font-size, 2);
-				color: black;
+				color: nth($colores, 4);
 				text-transform: uppercase;
 				align-items: center;
 				&:hover {
