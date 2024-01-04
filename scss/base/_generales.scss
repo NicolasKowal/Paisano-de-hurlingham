@@ -33,13 +33,13 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 	width: 100%;
 	margin: 0 auto;
 }
-.form-row{
+.form-row {
 	@include flex(flex, center, center, center);
 	height: 100%;
 	width: 90%;
 }
 
-.color{
+.color {
 	background-color: nth($colores, 4);
 	height: 40px;
 	width: 70px;
