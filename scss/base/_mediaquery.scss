@@ -3,7 +3,7 @@
 		grid-template-rows: 100px 75px auto 502px;
 	}
 	.grid-container2 {
-		grid-template-rows: 100px 75px 65.6vh auto;
+		grid-template-rows: 100px 75px 538px auto;
 	}
 	.navegador {
 		ul {
@@ -68,6 +68,7 @@
 		}
 	}
 	.publicidad {
+		height: 30px;
 		a {
 			font-size: nth($font-size, 12);
 		}
@@ -93,7 +94,7 @@
 			font-size: nth($font-size, 9);
 		}
 	}
-	.formul{
+	.formul {
 		padding: 30px;
 		height: 500px;
 	}
@@ -101,11 +102,11 @@
 
 @media (max-width: 1000px) {
 	.grid-container {
-		grid-template-rows: 100px 75px auto 502px;
+		grid-template-rows: 100px 95px auto 500px;
 	}
 	.grid-container2 {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100px 75px 655px auto;
+		grid-template-rows: 80px 95px 538px auto;
 		grid-template-areas:
 			"header header"
 			"nav nav"
@@ -152,34 +153,44 @@
 	.imagen_info {
 		img {
 			padding-top: 20px;
-			width: 40%;
+			width: 60%;
 		}
 	}
 	.pie {
 		display: block;
 		h2 {
-			font-size: nth($font-size, 16);
+			font-size: nth($font-size, 7);
 		}
 	}
 	.item-locales {
 		h3 {
-			font-size: nth($font-size, 10);
+			font-size: nth($font-size, 12);
+		}
+		a {
+			font-size: nth($font-size, 19);
+		}
+	}
+	.linkeos {
+		ul {
+			li {
+				width: 75%;
+			}
 		}
 	}
 	.img-footer {
-		height: 20%;
+		height: 15%;
 		img {
-			height: 100%;
+			width: 20%;
 		}
 	}
 	.publicidad {
-		height: 10%;
+		height: 50px;
 	}
 }
 
 @media (max-width: 720px) {
 	.grid-container {
-		grid-template-rows: 75px auto auto 502px;
+		grid-template-rows: 75px auto auto auto;
 	}
 	.grid-container2 {
 		grid-template-columns: repeat(2, 1fr);
@@ -193,8 +204,9 @@
 	}
 	.encabezado {
 		div {
+			height: 100%;
 			img {
-				width: 150px;
+				width: 175px;
 			}
 		}
 	}
@@ -205,7 +217,7 @@
 			height: 100%;
 			li {
 				a {
-					font-size: nth($font-size, 10);
+					font-size: nth($font-size, 12);
 				}
 			}
 		}
@@ -228,24 +240,29 @@
 	}
 	.pie {
 		h2 {
-			font-size: nth($font-size, 7);
+			font-size: nth($font-size, 10);
 		}
 		h3 {
-			font-size: nth($font-size, 7);
-		}
-	}
-
-	.item-locales {
-		p {
 			font-size: nth($font-size, 12);
 		}
+	}
+	.img-footer {
 		img {
-			width: 10%;
+			width: 150px;
+		}
+	}
+	.item-locales {
+		width: 25%;
+		p {
+			font-size: nth($font-size, 17);
+		}
+		img {
+			width: 20px;
 		}
 	}
 	.redes {
 		img {
-			width: 25px;
+			width: 30px;
 		}
 	}
 	.publicidad {
@@ -256,17 +273,17 @@
 	.catalogo {
 		grid-template-columns: 1fr;
 		grid-auto-rows: 400px;
-		gap: 10px;
+		gap: 60px;
 	}
 	.catalogo-item {
 		margin: 0 auto;
 	}
 	.imagen_info {
 		img {
-			width: 60%;
+			width: 80%;
 		}
 		div {
-			font-size: nth($font-size, 7);
+			font-size: nth($font-size, 10);
 		}
 	}
 	.tituloh1 {
@@ -284,23 +301,9 @@
 	}
 }
 
-@media (max-width: 600px) {
-	.item-locales {
-		h3 {
-			font-size: nth($font-size, 17);
-		}
-		p {
-			font-size: nth($font-size, 17);
-		}
-		img {
-			width: 10px;
-		}
-	}
-}
-
 @media (max-width: 500px) {
 	.grid-container {
-		grid-template-rows: 0 auto auto 500px;
+		grid-template-rows: 0 auto auto auto;
 	}
 	.grid-container2 {
 		grid-template-rows: 0 auto 450px 500px auto;
@@ -312,7 +315,6 @@
 			"aside"
 			"footer";
 	}
-
 	.encabezado {
 		div {
 			visibility: collapse;
@@ -325,7 +327,7 @@
 		ul {
 			li {
 				a {
-					font-size: nth($font-size, 19);
+					font-size: nth($font-size, 17);
 				}
 			}
 		}
@@ -334,7 +336,7 @@
 		width: 100%;
 		height: 250px;
 		h1 {
-			font-size: nth($font-size, 12);
+			font-size: nth($font-size, 11);
 		}
 	}
 	.banner {
@@ -354,10 +356,9 @@
 			font-size: nth($font-size, 17);
 		}
 	}
-
 	.pie {
 		img {
-			width: 25%;
+			width: 20%;
 			padding: 3px;
 		}
 		h2 {
@@ -376,13 +377,11 @@
 		}
 	}
 	.catalogo {
-		grid-auto-rows: 400px;
-		gap: 15px;
+		grid-auto-rows: 300px;
 	}
-
 	.imagen_info {
 		img {
-			width: 50%;
+			width: 90%;
 			padding: 2px;
 		}
 		div {
@@ -392,35 +391,117 @@
 	.img-footer {
 		height: 10%;
 		img {
-			height: 100%;
+			width: 120px;
 		}
 	}
 	.tituloh1 {
 		font-size: nth($font-size, 9);
 	}
 	.item-locales {
+		width: 40%;
 		h2 {
 			font-size: 10px;
 		}
 		h3 {
-			font-size: 10px;
+			font-size: 12px;
 		}
 	}
 }
 
 @media (max-width: 350px) {
-	.encabezado {
-		div {
-			visibility: collapse;
-		}
-	}
 	.navegador {
+		align-items: center;
+		height: 100%;
 		ul {
 			li {
 				a {
-					font-size: nth($font-size, 4);
+					font-size: nth($font-size, 21);
 				}
 			}
+		}
+	}
+	.foto-inicial {
+		width: 100%;
+		height: 250px;
+		h1 {
+			font-size: nth($font-size, 7);
+		}
+	}
+	.banner {
+		height: 200px;
+		width: 80%;
+	}
+	.texto-banner {
+		h2 {
+			visibility: collapse;
+			width: 0;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: nth($font-size, 17);
+		}
+		p {
+			width: 100%;
+			font-size: nth($font-size, 17);
+		}
+	}
+	.linkeos {
+		ul {
+			li {
+				a{
+					font-size: nth($font-size, 17);
+				}
+			}
+		}
+	}
+	.pie {
+		img {
+			width: 20%;
+			padding: 3px;
+		}
+		h2 {
+			font-size: nth($font-size, 7);
+		}
+		h3 {
+			font-size: nth($font-size, 7);
+		}
+		p {
+			font-size: nth($font-size, 17);
+		}
+	}
+	.redes {
+		img {
+			width: 30px;
+		}
+	}
+	.catalogo {
+		grid-auto-rows: 200px;
+		gap: 30px;
+	}
+	.imagen_info {
+		img {
+			width: 90%;
+			padding: 2px;
+		}
+		div {
+			font-size: nth($font-size, 18);
+		}
+	}
+	.img-footer {
+		img {
+			width: 150px;
+		}
+	}
+	.tituloh1 {
+		font-size: nth($font-size, 9);
+	}
+	.item-locales {
+		width: 50%;
+		height: 120px;
+		h2 {
+			font-size: 10px;
+		}
+		h3 {
+			font-size: 12px;
 		}
 	}
 }

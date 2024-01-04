@@ -74,6 +74,7 @@
 
 .publicidad {
 	background-color: nth($colores, 8);
+	height: 35px;
 	@include flex(flex, center, center, center);
 	a {
 		text-decoration: none;

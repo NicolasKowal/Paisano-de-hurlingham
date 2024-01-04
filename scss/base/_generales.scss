@@ -15,7 +15,7 @@ $colores: #fff9e1, #69503c, whitesmoke, black, #5f4633, #69503c, #907761,
 	#a4a4a4, #e62e1b;
 
 $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
-	15px, 120%, 36px, 110%, 24px, 11px, 12px, 80%, 25%;
+	15px, 120%, 36px, 110%, 24px, 11px, 12px, 80%, 25%, 8px;
 
 /* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
 
@@ -29,12 +29,14 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 /* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
 .formul {
 	@include flex(flex, center, center, center);
-	height: 400px;
+	height: 300px;
 	width: 100%;
-	margin: 0 auto;/*
-	margin-top: 50px;
-	margin-bottom: 50px;*/
-
+	margin: 0 auto;
+}
+.form-row{
+	@include flex(flex, center, center, center);
+	height: 100%;
+	width: 90%;
 }
 
 .color{
@@ -108,7 +110,7 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 100px 75px auto 550px;
+	grid-template-rows: 100px 75px auto 583px;
 	grid-template-areas:
 		"header header header"
 		"nav nav nav"

@@ -5,6 +5,11 @@
 	background-color: nth($colores, 1);
 	align-content: center;
 }
+
+.historia{
+	padding-left: 2%;
+	padding-right: 2%;
+}
 .tituloh1 {
 	color: nth($colores, 4);
 	text-align: center;
@@ -42,7 +47,7 @@
 	margin-top: 60px;
 	margin-bottom: 40px;
 	background-color: nth($colores, 5);
-	font-size: nth($font-size, 4);
+	font-size: nth($font-size, 12);
 	color: whitesmoke;
 	&:hover {
 		width: 89%;

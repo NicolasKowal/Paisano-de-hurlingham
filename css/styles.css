@@ -15,12 +15,17 @@
   align-items: center;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 300px;
   width: 100%;
-  margin: 0 auto;
-  /*
-	margin-top: 50px;
-	margin-bottom: 50px;*/ }
+  margin: 0 auto; }
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 90%; }
 
 .color {
   background-color: black;
@@ -83,7 +88,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 75px auto 550px;
+  grid-template-rows: 100px 75px auto 583px;
   grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
   margin: 0 auto;
   background-color: whitesmoke; }
@@ -227,6 +232,7 @@
 
 .publicidad {
   background-color: #a4a4a4;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,6 +252,10 @@
   grid-area: main;
   background-color: #fff9e1;
   align-content: center; }
+
+.historia {
+  padding-left: 2%;
+  padding-right: 2%; }
 
 .tituloh1 {
   color: black;
@@ -287,7 +297,7 @@
   margin-top: 60px;
   margin-bottom: 40px;
   background-color: #5f4633;
-  font-size: 14px;
+  font-size: 15px;
   color: whitesmoke; }
   .banner:hover {
     width: 89%;
@@ -364,7 +374,7 @@
   .grid-container {
     grid-template-rows: 100px 75px auto 502px; }
   .grid-container2 {
-    grid-template-rows: 100px 75px 65.6vh auto; }
+    grid-template-rows: 100px 75px 538px auto; }
   .navegador ul li a {
     font-size: 140%; }
   .texto-banner h2 {
@@ -393,8 +403,10 @@
       width: 10%; }
   .redes img {
     width: 30px; }
-  .publicidad a {
-    font-size: 15px; }
+  .publicidad {
+    height: 30px; }
+    .publicidad a {
+      font-size: 15px; }
   .catalogo {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px; }
@@ -412,10 +424,10 @@
 
 @media (max-width: 1000px) {
   .grid-container {
-    grid-template-rows: 100px 75px auto 502px; }
+    grid-template-rows: 100px 95px auto 500px; }
   .grid-container2 {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 75px 655px auto;
+    grid-template-rows: 80px 95px 538px auto;
     grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; }
   .encabezado div img {
     width: 200px; }
@@ -433,36 +445,42 @@
     font-size: 15px; }
   .imagen_info img {
     padding-top: 20px;
-    width: 40%; }
+    width: 60%; }
   .pie {
     display: block; }
     .pie h2 {
-      font-size: 24px; }
+      font-size: 20px; }
   .item-locales h3 {
-    font-size: 18px; }
+    font-size: 15px; }
+  .item-locales a {
+    font-size: 80%; }
+  .linkeos ul li {
+    width: 75%; }
   .img-footer {
-    height: 20%; }
+    height: 15%; }
     .img-footer img {
-      height: 100%; }
+      width: 20%; }
   .publicidad {
-    height: 10%; } }
+    height: 50px; } }
 
 @media (max-width: 720px) {
   .grid-container {
-    grid-template-rows: 75px auto auto 502px; }
+    grid-template-rows: 75px auto auto auto; }
   .grid-container2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 75px auto 55vh 50vh auto;
     grid-template-areas: "header header" "nav nav" "main main" "aside aside" "footer footer"; }
-  .encabezado div img {
-    width: 150px; }
+  .encabezado div {
+    height: 100%; }
+    .encabezado div img {
+      width: 175px; }
   .navegador {
     align-items: center; }
     .navegador ul {
       width: 100%;
       height: 100%; }
       .navegador ul li a {
-        font-size: 18px; }
+        font-size: 15px; }
   .foto-inicial {
     height: 250px; }
     .foto-inicial h1 {
@@ -474,27 +492,31 @@
     width: 80%;
     font-size: 12px; }
   .pie h2 {
-    font-size: 20px; }
+    font-size: 18px; }
   .pie h3 {
-    font-size: 20px; }
-  .item-locales p {
     font-size: 15px; }
-  .item-locales img {
-    width: 10%; }
+  .img-footer img {
+    width: 150px; }
+  .item-locales {
+    width: 25%; }
+    .item-locales p {
+      font-size: 11px; }
+    .item-locales img {
+      width: 20px; }
   .redes img {
-    width: 25px; }
+    width: 30px; }
   .publicidad a {
     font-size: 15px; }
   .catalogo {
     grid-template-columns: 1fr;
     grid-auto-rows: 400px;
-    gap: 10px; }
+    gap: 60px; }
   .catalogo-item {
     margin: 0 auto; }
   .imagen_info img {
-    width: 60%; }
+    width: 80%; }
   .imagen_info div {
-    font-size: 20px; }
+    font-size: 18px; }
   .tituloh1 {
     font-size: 30px; }
   .principal ul li {
@@ -502,17 +524,9 @@
     .principal ul li a {
       font-size: 20px; } }
 
-@media (max-width: 600px) {
-  .item-locales h3 {
-    font-size: 11px; }
-  .item-locales p {
-    font-size: 11px; }
-  .item-locales img {
-    width: 10px; } }
-
 @media (max-width: 500px) {
   .grid-container {
-    grid-template-rows: 0 auto auto 500px; }
+    grid-template-rows: 0 auto auto auto; }
   .grid-container2 {
     grid-template-rows: 0 auto 450px 500px auto;
     grid-template-columns: 1fr;
@@ -524,12 +538,12 @@
     align-items: center;
     height: 100%; }
     .navegador ul li a {
-      font-size: 80%; }
+      font-size: 11px; }
   .foto-inicial {
     width: 100%;
     height: 250px; }
     .foto-inicial h1 {
-      font-size: 15px; }
+      font-size: 25px; }
   .banner {
     height: 200px;
     width: 80%; }
@@ -543,7 +557,7 @@
     width: 100%;
     font-size: 11px; }
   .pie img {
-    width: 25%;
+    width: 20%;
     padding: 3px; }
   .pie h2 {
     font-size: 20px; }
@@ -554,26 +568,77 @@
   .redes img {
     width: 30px; }
   .catalogo {
-    grid-auto-rows: 400px;
-    gap: 15px; }
+    grid-auto-rows: 300px; }
   .imagen_info img {
-    width: 50%;
+    width: 90%;
     padding: 2px; }
   .imagen_info div {
     font-size: 12px; }
   .img-footer {
     height: 10%; }
     .img-footer img {
-      height: 100%; }
+      width: 120px; }
   .tituloh1 {
     font-size: 20px; }
-  .item-locales h2 {
-    font-size: 10px; }
-  .item-locales h3 {
-    font-size: 10px; } }
+  .item-locales {
+    width: 40%; }
+    .item-locales h2 {
+      font-size: 10px; }
+    .item-locales h3 {
+      font-size: 12px; } }
 
 @media (max-width: 350px) {
-  .encabezado div {
-    visibility: collapse; }
-  .navegador ul li a {
-    font-size: 14px; } }
+  .navegador {
+    align-items: center;
+    height: 100%; }
+    .navegador ul li a {
+      font-size: 8px; }
+  .foto-inicial {
+    width: 100%;
+    height: 250px; }
+    .foto-inicial h1 {
+      font-size: 20px; }
+  .banner {
+    height: 200px;
+    width: 80%; }
+  .texto-banner h2 {
+    visibility: collapse;
+    width: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 11px; }
+  .texto-banner p {
+    width: 100%;
+    font-size: 11px; }
+  .linkeos ul li a {
+    font-size: 11px; }
+  .pie img {
+    width: 20%;
+    padding: 3px; }
+  .pie h2 {
+    font-size: 20px; }
+  .pie h3 {
+    font-size: 20px; }
+  .pie p {
+    font-size: 11px; }
+  .redes img {
+    width: 30px; }
+  .catalogo {
+    grid-auto-rows: 200px;
+    gap: 30px; }
+  .imagen_info img {
+    width: 90%;
+    padding: 2px; }
+  .imagen_info div {
+    font-size: 12px; }
+  .img-footer img {
+    width: 150px; }
+  .tituloh1 {
+    font-size: 20px; }
+  .item-locales {
+    width: 50%;
+    height: 120px; }
+    .item-locales h2 {
+      font-size: 10px; }
+    .item-locales h3 {
+      font-size: 12px; } }
