@@ -420,7 +420,11 @@
     font-size: 20px; }
   .formul {
     padding: 30px;
-    height: 500px; } }
+    height: 500px; }
+  .carusel {
+    height: 500px; }
+    .carusel img {
+      height: 500px; } }
 
 @media (max-width: 1000px) {
   .grid-container {
@@ -461,7 +465,11 @@
     .img-footer img {
       width: 20%; }
   .publicidad {
-    height: 50px; } }
+    height: 50px; }
+  .carusel {
+    height: 400px; }
+    .carusel img {
+      height: 400px; } }
 
 @media (max-width: 720px) {
   .grid-container {
@@ -522,7 +530,11 @@
   .principal ul li {
     width: 50%; }
     .principal ul li a {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .carusel {
+    height: 350px; }
+    .carusel img {
+      height: 350px; } }
 
 @media (max-width: 500px) {
   .grid-container {
@@ -585,7 +597,11 @@
     .item-locales h2 {
       font-size: 10px; }
     .item-locales h3 {
-      font-size: 12px; } }
+      font-size: 12px; }
+  .carusel {
+    height: 300px; }
+    .carusel img {
+      height: 300px; } }
 
 @media (max-width: 350px) {
   .navegador {
@@ -641,4 +657,8 @@
     .item-locales h2 {
       font-size: 10px; }
     .item-locales h3 {
-      font-size: 12px; } }
+      font-size: 12px; }
+  .carusel {
+    height: 200px; }
+    .carusel img {
+      height: 200px; } }

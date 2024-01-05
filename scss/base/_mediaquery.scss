@@ -98,6 +98,13 @@
 		padding: 30px;
 		height: 500px;
 	}
+	.carusel {
+		height: 500px;
+		img {
+			height: 500px;
+
+		}
+	}
 }
 
 @media (max-width: 1000px) {
@@ -185,6 +192,13 @@
 	}
 	.publicidad {
 		height: 50px;
+	}
+	.carusel {
+		height: 400px;
+		img {
+			height: 400px;
+
+		}
 	}
 }
 
@@ -299,6 +313,13 @@
 			}
 		}
 	}
+	.carusel {
+		height: 350px;
+		img {
+			height: 350px;
+
+		}
+	}
 }
 
 @media (max-width: 500px) {
@@ -406,6 +427,12 @@
 			font-size: 12px;
 		}
 	}
+	.carusel {
+		height: 300px;
+		img {
+			height: 300px;
+		}
+	}
 }
 
 @media (max-width: 350px) {
@@ -502,6 +529,12 @@
 		}
 		h3 {
 			font-size: 12px;
+		}
+	}
+	.carusel {
+		height: 200px;
+		img {
+			height: 200px;
 		}
 	}
 }
