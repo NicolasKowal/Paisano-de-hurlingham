@@ -93,6 +93,9 @@
 		div {
 			font-size: nth($font-size, 9);
 		}
+		img{
+			width: 50%;
+		}
 	}
 	.formul {
 		padding: 30px;
@@ -102,7 +105,15 @@
 		height: 500px;
 		img {
 			height: 500px;
-
+		}
+	}
+	.linkeos{
+		ul{
+			li{
+				a{
+					font-size: nth($font-size, 14);
+				}
+			}
 		}
 	}
 }
@@ -178,12 +189,15 @@
 		}
 	}
 	.linkeos {
-		ul {
-			li {
-				width: 75%;
+		ul{
+			li{
+				a{
+					font-size: nth($font-size, 16);
+				}
 			}
 		}
 	}
+
 	.img-footer {
 		height: 15%;
 		img {
@@ -197,7 +211,6 @@
 		height: 400px;
 		img {
 			height: 400px;
-
 		}
 	}
 }
@@ -317,7 +330,6 @@
 		height: 350px;
 		img {
 			height: 350px;
-
 		}
 	}
 }
@@ -431,6 +443,15 @@
 		height: 300px;
 		img {
 			height: 300px;
+		}
+	}
+	.linkeos{
+		ul{
+			li{
+				a{
+					font-size: nth($font-size, 16);
+				}
+			}
 		}
 	}
 }

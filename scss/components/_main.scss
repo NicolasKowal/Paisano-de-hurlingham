@@ -2,7 +2,16 @@
 
 .principal {
 	grid-area: main;
-	background-color: nth($colores, 1);
+
+	background: rgba(199, 182, 159, 1);
+	background: -moz-linear-gradient(
+		top,
+		rgba(199, 182, 159, 1) 0%,
+		rgba(227, 215, 191, 1) 45%,
+		rgba(255, 249, 225, 1) 80%,
+		rgba(255, 249, 225, 1) 100%
+	);
+
 	align-content: center;
 }
 
@@ -29,9 +38,7 @@
 		font-size: nth($font-size, 3);
 		text-transform: capitalize;
 		text-align: center;
-		color: nth($colores, 3);
-		-webkit-text-stroke-width: 0.5px;
-		-webkit-text-stroke-color: nth($colores, 4);
+		color: nth($colores, 4);
 		width: 75%;
 		text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.49);
 	}

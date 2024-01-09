@@ -27,17 +27,31 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 }
 
 /* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
-.formul {
-	@include flex(flex, center, center, center);
-	height: 300px;
-	width: 100%;
-	margin: 0 auto;
+
+.formul{
+	padding: 10px;
 }
-.form-row {
-	@include flex(flex, center, center, center);
-	height: 100%;
+
+.needs-validation {
+	display: flex;
+	flex-direction: column;
 	width: 90%;
+	/* Otras propiedades según sea necesario */
 }
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	
+	input {
+	  width: 200px; /* Todos los campos de entrada tendrán el mismo ancho */
+	  /* Otras propiedades según sea necesario */
+	}
+}
+
+
+
 
 .color {
 	background-color: nth($colores, 4);
@@ -144,17 +158,25 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 }
 
 .linkeos {
-	ul {
-		li {
-			font-size: nth($font-size, 1);
-			list-style: none;
-			height: 100%;
-			width: 100%;
-			font-size: nth($font-size, 3);
-			margin-inline: 50px;
-			a {
-				color: black;
+	ul{
+		height: 75%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		li{
+			width: 90%;
+			height: 20%;
+			display: flex;
+			align-items: center;
+			a{
+				color: nth($colores, 4 );
+				font-size: nth($font-size, 3);
 			}
 		}
 	}
+}
+
+
+.btn-primary{
+	margin: 10px;
 }
