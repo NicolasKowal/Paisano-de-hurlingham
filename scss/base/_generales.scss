@@ -26,9 +26,14 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 	align-items: $align;
 }
 
-/* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
+@mixin tamano($height, $width) {
+	height: $height;
+	width: $width;
+}
 
-.formul{
+/* -  -  -  -  -  -  -  -  FORM  -  -  -  -  -  -  -  - */
+
+.formul {
 	padding: 10px;
 }
 
@@ -36,36 +41,33 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 	display: flex;
 	flex-direction: column;
 	width: 90%;
-	/* Otras propiedades según sea necesario */
 }
 
 .form-row {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	
 	input {
-	  width: 200px; /* Todos los campos de entrada tendrán el mismo ancho */
-	  /* Otras propiedades según sea necesario */
+		width: 200px;
 	}
 }
 
+.btn-primary {
+	margin: 10px;
+}
 
-
+/* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
 
 .color {
 	background-color: nth($colores, 4);
-	height: 40px;
-	width: 70px;
+	@include tamano(40px, 70px);
 }
 
 .carusel {
 	margin: 0;
-	height: 600px;
-	width: 100%;
+	@include tamano(600px, 100%);
 	img {
-		height: 600px;
-		width: 100px;
+		@include tamano(600px, 100%);
 		aspect-ratio: 2 / 1;
 		object-position: center;
 	}
@@ -85,19 +87,16 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 	align-items: center;
 	gap: 10%;
 	div {
-		width: 100%;
-		height: 100%;
+		@include tamano(100%, 100%);
 		position: relative;
 		img {
-			width: 100%;
-			height: 100%;
+			@include tamano(100%, 100%);
 			aspect-ratio: 1 / 1;
 		}
 		h2 {
 			@include flex(flex, center, center, center);
 			visibility: hidden;
-			height: 20%;
-			width: 100%;
+			@include tamano(20%, 100%);
 			position: absolute;
 			bottom: 0;
 			text-transform: capitalize;
@@ -158,25 +157,20 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 }
 
 .linkeos {
-	ul{
+	ul {
 		height: 75%;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		li{
+		li {
 			width: 90%;
 			height: 20%;
 			display: flex;
 			align-items: center;
-			a{
-				color: nth($colores, 4 );
+			a {
+				color: nth($colores, 4);
 				font-size: nth($font-size, 3);
 			}
 		}
 	}
-}
-
-
-.btn-primary{
-	margin: 10px;
 }

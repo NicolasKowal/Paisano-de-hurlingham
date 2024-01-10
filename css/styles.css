@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -10,25 +9,26 @@
 
 /* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
 /* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
-/* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
+/* -  -  -  -  -  -  -  -  FORM  -  -  -  -  -  -  -  - */
 .formul {
   padding: 10px; }
 
 .needs-validation {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  /* Otras propiedades según sea necesario */ }
+  width: 90%; }
 
 .form-row {
   display: flex;
   flex-direction: column;
   width: 100%; }
   .form-row input {
-    width: 200px;
-    /* Todos los campos de entrada tendrán el mismo ancho */
-    /* Otras propiedades según sea necesario */ }
+    width: 200px; }
 
+.btn-primary {
+  margin: 10px; }
+
+/* -  -  -  -  -  -  -  -  CARUSEL  -  -  -  -  -  -  -  - */
 .color {
   background-color: black;
   height: 40px;
@@ -40,7 +40,7 @@
   width: 100%; }
   .carusel img {
     height: 600px;
-    width: 100px;
+    width: 100%;
     aspect-ratio: 2 / 1;
     object-position: center; }
 
@@ -57,12 +57,12 @@
   align-items: center;
   gap: 10%; }
   .catalogo div {
-    width: 100%;
     height: 100%;
+    width: 100%;
     position: relative; }
     .catalogo div img {
-      width: 100%;
       height: 100%;
+      width: 100%;
       aspect-ratio: 1 / 1; }
     .catalogo div h2 {
       display: flex;
@@ -124,16 +124,13 @@
       color: black;
       font-size: 48px; }
 
-.btn-primary {
-  margin: 10px; }
-
 /* -  -  -  -  -  -  -  -  HEADER  -  -  -  -  -  -  -  - */
 .encabezado {
   grid-area: header;
   display: block;
   background-color: #69503c;
-  width: 100%;
   height: 100%;
+  width: 100%;
   padding: 10px; }
   .encabezado div {
     height: 100%;
@@ -200,6 +197,7 @@
     height: 100%;
     width: 300px; }
 
+/* -  -  -  -  -  -  -  -  LOCALES  -  -  -  -  -  -  -  - */
 .contenedor-locales {
   display: flex;
   flex-wrap: wrap;
@@ -228,6 +226,7 @@
     text-align: center;
     width: 5%; }
 
+/* -  -  -  -  -  -  -  -  REDES SOCIALES  -  -  -  -  -  -  -  - */
 .redes img {
   width: 40px; }
 
@@ -239,6 +238,7 @@
     list-style: none;
     margin-inline: 10px; }
 
+/* -  -  -  -  -  -  -  -  PUBLICIDAD  -  -  -  -  -  -  -  - */
 .publicidad {
   background-color: #a4a4a4;
   height: 35px;
@@ -256,17 +256,14 @@
   .publicidad:hover {
     transform: rotate(180deg); }
 
-/* -  -  -  -  -  -  -  -  MAIN INDEX  -  -  -  -  -  -  -  - */
+/* -  -  -  -  -  -  -  -  MAIN  -  -  -  -  -  -  -  - */
 .principal {
   grid-area: main;
   background: #c7b69f;
   background: -moz-linear-gradient(top, #c7b69f 0%, #e3d7bf 45%, #fff9e1 80%, #fff9e1 100%);
   align-content: center; }
 
-.historia {
-  padding-left: 2%;
-  padding-right: 2%; }
-
+/* -  -  -  -  -  -  -  -  H1 GENERAL  -  -  -  -  -  -  -  - */
 .tituloh1 {
   color: black;
   text-align: center;
@@ -274,9 +271,15 @@
   padding-top: 20px;
   text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.49); }
 
+/* -  -  -  -  -  -  -  -  MAIN INFO  -  -  -  -  -  -  -  - */
+.historia {
+  padding-left: 2%;
+  padding-right: 2%; }
+
+/* -  -  -  -  -  -  -  -  MAIN INDEX  -  -  -  -  -  -  -  - */
 .foto-inicial {
-  width: 100%;
   height: 500px;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: url("../img/Hogaza-con-MASA-MADRE.-Horneado-PADOCADOALEX.jpg");
@@ -300,16 +303,16 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 90%;
   height: 200px;
+  width: 90%;
   margin-top: 60px;
   margin-bottom: 40px;
   background-color: #5f4633;
   font-size: 15px;
   color: whitesmoke; }
   .banner:hover {
-    width: 89%;
     height: 205px;
+    width: 89%;
     background-color: #69503c; }
   .banner h2 {
     width: 50%;
@@ -321,8 +324,8 @@
     display: flex;
     align-content: center;
     text-transform: capitalize;
-    width: 50%;
-    height: 100%; }
+    height: 100%;
+    width: 50%; }
 
 .banner-izquierdo {
   border-top-left-radius: 40px 40px;
@@ -389,10 +392,6 @@
     font-size: 20px; }
   .texto-banner p {
     font-size: 18px; }
-  .banner-izquierdo div img {
-    object-fit: fill; }
-  .banner-derecho div img {
-    object-fit: fill; }
   .pie h2 {
     font-size: 30px; }
   .pie h3 {
@@ -419,8 +418,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 60px; }
     .catalogo div {
-      width: 100%;
       height: 100%;
+      width: 100%;
       position: relative; }
   .principal li a {
     font-size: 30px; }
@@ -497,8 +496,8 @@
   .navegador {
     align-items: center; }
     .navegador ul {
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
       .navegador ul li a {
         font-size: 15px; }
   .foto-inicial {
@@ -564,8 +563,8 @@
     .navegador ul li a {
       font-size: 11px; }
   .foto-inicial {
-    width: 100%;
-    height: 250px; }
+    height: 250px;
+    width: 100%; }
     .foto-inicial h1 {
       font-size: 25px; }
   .banner {
@@ -624,12 +623,12 @@
     .navegador ul li a {
       font-size: 8px; }
   .foto-inicial {
-    width: 100%;
-    height: 250px; }
+    height: 250px;
+    width: 100%; }
     .foto-inicial h1 {
       font-size: 20px; }
   .banner {
-    height: 200px;
+    height: 150px;
     width: 80%; }
   .texto-banner h2 {
     visibility: collapse;
@@ -666,8 +665,8 @@
   .tituloh1 {
     font-size: 20px; }
   .item-locales {
-    width: 50%;
-    height: 120px; }
+    height: 120px;
+    width: 50%; }
     .item-locales h2 {
       font-size: 10px; }
     .item-locales h3 {

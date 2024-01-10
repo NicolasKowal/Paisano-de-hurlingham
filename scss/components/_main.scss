@@ -1,8 +1,7 @@
-/* -  -  -  -  -  -  -  -  MAIN INDEX  -  -  -  -  -  -  -  - */
+/* -  -  -  -  -  -  -  -  MAIN  -  -  -  -  -  -  -  - */
 
 .principal {
 	grid-area: main;
-
 	background: rgba(199, 182, 159, 1);
 	background: -moz-linear-gradient(
 		top,
@@ -11,14 +10,11 @@
 		rgba(255, 249, 225, 1) 80%,
 		rgba(255, 249, 225, 1) 100%
 	);
-
 	align-content: center;
 }
 
-.historia {
-	padding-left: 2%;
-	padding-right: 2%;
-}
+/* -  -  -  -  -  -  -  -  H1 GENERAL  -  -  -  -  -  -  -  - */
+
 .tituloh1 {
 	color: nth($colores, 4);
 	text-align: center;
@@ -26,9 +22,17 @@
 	padding-top: 20px;
 	text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.49);
 }
+/* -  -  -  -  -  -  -  -  MAIN INFO  -  -  -  -  -  -  -  - */
+
+.historia {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+/* -  -  -  -  -  -  -  -  MAIN INDEX  -  -  -  -  -  -  -  - */
+
 .foto-inicial {
-	width: 100%;
-	height: 500px;
+	@include tamano(500px,100%);
 	display: flex;
 	justify-content: center;
 	background: url("../img/Hogaza-con-MASA-MADRE.-Horneado-PADOCADOALEX.jpg");
@@ -49,34 +53,29 @@
 .banner {
 	@include flex(flex, center, space-between, center);
 	margin: 0 auto;
-	width: 90%;
-	height: 200px;
+	@include tamano(200px, 90%);
 	margin-top: 60px;
 	margin-bottom: 40px;
 	background-color: nth($colores, 5);
 	font-size: nth($font-size, 12);
 	color: whitesmoke;
 	&:hover {
-		width: 89%;
-		height: 205px;
+		@include tamano(205px, 89%);
 		background-color: nth($colores, 6);
 	}
 	h2 {
 		width: 50%;
 		padding: 5%;
 	}
-
 	p {
 		width: 50%;
 		padding: 5%;
 	}
-
 	div {
 		display: flex;
 		align-content: center;
 		text-transform: capitalize;
-		width: 50%;
-		height: 100%;
+		@include tamano(100%, 50%);
 	}
 }
 
@@ -89,8 +88,7 @@
 			border-bottom-left-radius: 40px 40px;
 			aspect-ratio: 1 / 1;
 			object-fit: cover;
-			height: 100%;
-			width: 100%;
+			@include tamano(100%, 100%);
 		}
 	}
 }
@@ -105,8 +103,7 @@
 			border-bottom-right-radius: 40px 40px;
 			aspect-ratio: 1 / 1;
 			object-fit: cover;
-			height: 100%;
-			width: 100%;
+			@include tamano(100%, 100%);
 		}
 	}
 }

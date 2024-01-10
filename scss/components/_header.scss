@@ -4,12 +4,10 @@
 	grid-area: header;
 	display: block;
 	background-color: nth($colores, 2);
-	width: 100%;
-	height: 100%;
+	@include tamano(100%, 100%);
 	padding: 10px;
 	div {
-		height: 100%;
-		width: 100%;
+		@include tamano(100%, 100%);
 		@include flex(flex, center, center, center);
 	}
 	img {
@@ -26,18 +24,15 @@
 
 .navegador {
 	grid-area: nav;
-	height: 100%;
-	width: 100%;
+	@include tamano(100%, 100%);
 	background-color: nth($colores, 2);
 	ul {
 		@include flex(flex, center, space-around, center);
 		flex-direction: row;
-		height: 50%;
-		width: 100%;
+		@include tamano(50%, 100%);
 		list-style: none;
 		li {
-			height: 75%;
-			width: 75%;
+			@include tamano(75%, 75%);
 			@include flex(flex, center, center, center);
 			a {
 				text-decoration: none;

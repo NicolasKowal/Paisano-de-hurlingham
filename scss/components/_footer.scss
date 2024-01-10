@@ -17,10 +17,11 @@
 	display: flex;
 	justify-content: center;
 	img {
-		height: 100%;
-		width: 300px;
+		@include tamano(100%, 300px);
 	}
 }
+
+/* -  -  -  -  -  -  -  -  LOCALES  -  -  -  -  -  -  -  - */
 
 .contenedor-locales {
 	display: flex;
@@ -32,9 +33,7 @@
 	margin: 10px;
 	padding: 5px;
 	border: 1px;
-	height: 150px;
-	width: 20%;
-
+	@include tamano(150px, 20%);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -57,6 +56,8 @@
 	}
 }
 
+/* -  -  -  -  -  -  -  -  REDES SOCIALES  -  -  -  -  -  -  -  - */
+
 .redes {
 	img {
 		width: 40px;
@@ -71,6 +72,8 @@
 		}
 	}
 }
+
+/* -  -  -  -  -  -  -  -  PUBLICIDAD  -  -  -  -  -  -  -  - */
 
 .publicidad {
 	background-color: nth($colores, 8);

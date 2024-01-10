@@ -22,20 +22,6 @@
 			font-size: nth($font-size, 10);
 		}
 	}
-	.banner-izquierdo {
-		div {
-			img {
-				object-fit: fill;
-			}
-		}
-	}
-	.banner-derecho {
-		div {
-			img {
-				object-fit: fill;
-			}
-		}
-	}
 	.pie {
 		h2 {
 			font-size: nth($font-size, 5);
@@ -46,13 +32,11 @@
 	}
 	.img-footer {
 		img {
-			height: 100%;
-			width: 200px;
+			@include tamano(100%, 200px);
 		}
 	}
 	.item-locales {
-		height: 150px;
-		width: 20%;
+		@include tamano(150px, 20%);
 		p {
 			font-size: nth($font-size, 12);
 		}
@@ -77,8 +61,7 @@
 		grid-template-columns: repeat(2, 1fr);
 		gap: 60px;
 		div {
-			width: 100%;
-			height: 100%;
+			@include tamano(100%, 100%);
 			position: relative;
 		}
 	}
@@ -93,7 +76,7 @@
 		div {
 			font-size: nth($font-size, 9);
 		}
-		img{
+		img {
 			width: 50%;
 		}
 	}
@@ -107,10 +90,10 @@
 			height: 500px;
 		}
 	}
-	.linkeos{
-		ul{
-			li{
-				a{
+	.linkeos {
+		ul {
+			li {
+				a {
 					font-size: nth($font-size, 14);
 				}
 			}
@@ -189,9 +172,9 @@
 		}
 	}
 	.linkeos {
-		ul{
-			li{
-				a{
+		ul {
+			li {
+				a {
 					font-size: nth($font-size, 16);
 				}
 			}
@@ -240,8 +223,7 @@
 	.navegador {
 		align-items: center;
 		ul {
-			width: 100%;
-			height: 100%;
+			@include tamano(100%, 100%);
 			li {
 				a {
 					font-size: nth($font-size, 12);
@@ -366,15 +348,13 @@
 		}
 	}
 	.foto-inicial {
-		width: 100%;
-		height: 250px;
+		@include tamano(250px, 100%);
 		h1 {
 			font-size: nth($font-size, 11);
 		}
 	}
 	.banner {
-		height: 200px;
-		width: 80%;
+		@include tamano(200px, 80%);
 	}
 	.texto-banner {
 		h2 {
@@ -445,10 +425,10 @@
 			height: 300px;
 		}
 	}
-	.linkeos{
-		ul{
-			li{
-				a{
+	.linkeos {
+		ul {
+			li {
+				a {
 					font-size: nth($font-size, 16);
 				}
 			}
@@ -469,15 +449,13 @@
 		}
 	}
 	.foto-inicial {
-		width: 100%;
-		height: 250px;
+		@include tamano(250px, 100%);
 		h1 {
 			font-size: nth($font-size, 7);
 		}
 	}
 	.banner {
-		height: 200px;
-		width: 80%;
+		@include tamano(150px, 80%);
 	}
 	.texto-banner {
 		h2 {
@@ -543,8 +521,7 @@
 		font-size: nth($font-size, 9);
 	}
 	.item-locales {
-		width: 50%;
-		height: 120px;
+		@include tamano(120px, 50%);
 		h2 {
 			font-size: 10px;
 		}
