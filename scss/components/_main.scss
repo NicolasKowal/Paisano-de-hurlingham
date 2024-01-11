@@ -15,7 +15,7 @@
 
 /* -  -  -  -  -  -  -  -  H1 GENERAL  -  -  -  -  -  -  -  - */
 
-.tituloh1 {
+.tituloh1 { /*modifica todos los h1 de los documentos*/
 	color: nth($colores, 4);
 	text-align: center;
 	padding-left: 20px;
@@ -33,8 +33,7 @@
 
 .foto-inicial {
 	@include tamano(500px,100%);
-	display: flex;
-	justify-content: center;
+	@include flex(flex, center, center, center);
 	background: url("../img/Hogaza-con-MASA-MADRE.-Horneado-PADOCADOALEX.jpg");
 	background-size: cover;
 	h1 {
@@ -124,10 +123,9 @@
 .imagen_info {
 	padding-top: 20px;
 	padding-bottom: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex(flex, center, center, center);
 	flex-direction: column;
+
 
 	div {
 		width: 100%;
@@ -140,5 +138,6 @@
 	img {
 		padding-top: 20px;
 		width: 30%;
+		height: 100%;
 	}
 }

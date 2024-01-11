@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +9,7 @@
   padding: 10px; }
 
 /* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
+/*agregado de variables para prefijar los colores y el tamaño de las letras*/
 /* -  -  -  -  -  -  -  -  MIXIN  -  -  -  -  -  -  -  - */
 /* -  -  -  -  -  -  -  -  FORM  -  -  -  -  -  -  -  - */
 .formul {
@@ -78,10 +80,13 @@
       font-size: larger;
       color: whitesmoke;
       background-color: rgba(0, 0, 0, 0.651); }
-    .catalogo div:hover h2 {
-      visibility: visible; }
+    .catalogo div:hover {
+      /*se vuelve visible al pasarle el puntero por arriba*/ }
+      .catalogo div:hover h2 {
+        visibility: visible; }
 
 .catalogo-item {
+  /*fondo de sombra para que parezca que esta por arriba del documento*/
   -webkit-box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
   box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8); }
@@ -96,6 +101,7 @@
   background-color: whitesmoke; }
 
 .grid-container2 {
+  /*grid para la solapa locales, para tener el aside configurado*/
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 75px 569px auto;
@@ -254,6 +260,7 @@
     letter-spacing: 5px;
     transition: transform 0.3s ease; }
   .publicidad:hover {
+    /*cuando se pasa el mouse por encima, rotara*/
     transform: rotate(180deg); }
 
 /* -  -  -  -  -  -  -  -  MAIN  -  -  -  -  -  -  -  - */
@@ -265,6 +272,7 @@
 
 /* -  -  -  -  -  -  -  -  H1 GENERAL  -  -  -  -  -  -  -  - */
 .tituloh1 {
+  /*modifica todos los h1 de los documentos*/
   color: black;
   text-align: center;
   padding-left: 20px;
@@ -281,7 +289,9 @@
   height: 500px;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
+  align-items: center;
   background: url("../img/Hogaza-con-MASA-MADRE.-Horneado-PADOCADOALEX.jpg");
   background-size: cover; }
   .foto-inicial h1 {
@@ -369,6 +379,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column; }
   .imagen_info div {
     width: 100%;
@@ -379,7 +390,8 @@
     text-align: justify; }
   .imagen_info img {
     padding-top: 20px;
-    width: 30%; }
+    width: 30%;
+    height: 100%; }
 
 @media (max-width: 1300px) {
   .grid-container {

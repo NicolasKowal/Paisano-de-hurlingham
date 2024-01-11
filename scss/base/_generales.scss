@@ -11,6 +11,7 @@
 
 /* -  -  -  -  -  -  -  -  VARIABLES  -  -  -  -  -  -  -  - */
 
+/*agregado de variables para prefijar los colores y el tamaño de las letras*/
 $colores: #fff9e1, #69503c, whitesmoke, black, #5f4633, #69503c, #907761,
 	#a4a4a4, #e62e1b;
 
@@ -104,7 +105,7 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 			color: nth($colores, 3);
 			background-color: rgba(0, 0, 0, 0.651);
 		}
-		&:hover {
+		&:hover { /*se vuelve visible al pasarle el puntero por arriba*/
 			h2 {
 				visibility: visible;
 			}
@@ -112,7 +113,7 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 	}
 }
 
-.catalogo-item {
+.catalogo-item { /*fondo de sombra para que parezca que esta por arriba del documento*/
 	-webkit-box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
 	box-shadow: 14px 20px 37px -1px rgba(0, 0, 0, 0.8);
@@ -133,7 +134,7 @@ $font-size: larger, 150%, 48px, 14px, 30px, 28px, 20px, 140%, 20px, 18px, 25px,
 	background-color: nth($colores, 3);
 }
 
-.grid-container2 {
+.grid-container2 { /*grid para la solapa locales, para tener el aside configurado*/
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 100px 75px 569px auto;

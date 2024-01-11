@@ -87,7 +87,7 @@
 		letter-spacing: 5px;
 		transition: transform 0.3s ease;
 	}
-	&:hover {
+	&:hover { /*cuando se pasa el mouse por encima, rotara*/
 		transform: rotate(180deg);
 	}
 }
